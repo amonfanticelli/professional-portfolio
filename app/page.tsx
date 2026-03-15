@@ -69,7 +69,7 @@ export default function Home() {
             style={{ transitionDelay: "600ms" }}
             className="justify-center flex-wrap flex flex-row gap-6 reveal"
           >
-            <div className="text-center bg-white/15 px-[30px] py-[20px] rounded-lg backdrop-blur-[12px] border border-white/30 transition-all cursor-default flex-1 min-w-[120px] flex flex-col">
+            <div className="text-center bg-white/15 px-7.5 py-5 rounded-lg backdrop-blur-md border border-white/30 transition-all duration-400 cursor-default flex-1 min-w-30 flex flex-col hover:-translate-y-1.25 hover:scale-[1.05] hover:bg-white/25 hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)]">
               <span className="block text-[2.8rem] font-bold text-white leading-none">
                 16+
               </span>
@@ -77,7 +77,7 @@ export default function Home() {
                 PROJETOS
               </span>
             </div>
-            <div className="text-center bg-white/15 px-[30px] py-[20px] rounded-lg backdrop-blur-[12px] border border-white/30 transition-all cursor-default flex-1 min-w-[120px] flex flex-col">
+            <div className="text-center bg-white/15 px-7.5 py-5 rounded-lg backdrop-blur-md border border-white/30 transition-all duration-400 cursor-default flex-1 min-w-30 flex flex-col hover:-translate-y-1.25 hover:scale-[1.05] hover:bg-white/25 hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)]">
               <span className="block text-[2.8rem] font-bold text-white leading-none">
                 9+
               </span>
@@ -85,7 +85,7 @@ export default function Home() {
                 TECNOLOGIAS
               </span>
             </div>
-            <div className="text-center bg-white/15 px-[30px] py-[20px] rounded-lg backdrop-blur-[12px] border border-white/30 transition-all cursor-default flex-1 min-w-[120px] flex flex-col">
+            <div className="text-center bg-white/15 px-7.5 py-5 rounded-lg backdrop-blur-md border border-white/30 transition-all duration-400 cursor-default flex-1 min-w-30 flex flex-col hover:-translate-y-1.25 hover:scale-[1.05] hover:bg-white/25 hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)]">
               <span className="block text-[2.8rem] font-bold text-white leading-none">
                 3+
               </span>
@@ -98,40 +98,40 @@ export default function Home() {
       </header>
 
       <nav className="bg-white/85 backdrop-blur-[20px] border-b border-pink-300/10 relative z-100 transition-all w-full">
-        <div className="flex items-center justify-between py-[15px] px-[20px] max-w-[1200px] mx-auto">
-          <div className="flex gap-[40px] flex-wrap justify-center">
+        <div className="flex items-center justify-between py-3.75 px-5 max-w-300 mx-auto">
+          <div className="flex gap-10 flex-wrap justify-center">
             <a
               href="#sobre"
-              className="nav-link text-gray-600 no-underline font-semibold text-base relative py-2 whitespace-nowrap"
+              className="nav-link text-gray-600 no-underline font-semibold text-base relative py-2 whitespace-nowrap transition-colors duration-300 hover:text-[#667eea]"
             >
               Sobre
             </a>
             <a
               href="#ferramentas"
-              className="nav-link text-gray-600 no-underline font-semibold text-base relative py-2 whitespace-nowrap"
+              className="nav-link text-gray-600 no-underline font-semibold text-base relative py-2 whitespace-nowrap transition-colors duration-300 hover:text-[#667eea]"
             >
               Ferramentas
             </a>
             <a
               href="#projetos"
-              className="nav-link text-gray-600 no-underline font-semibold text-base relative py-2 whitespace-nowrap"
+              className="nav-link text-gray-600 no-underline font-semibold text-base relative py-2 whitespace-nowrap transition-colors duration-300 hover:text-[#667eea]"
             >
               Projetos
             </a>
             <a
               href="#contato"
-              className="nav-link text-gray-600 no-underline font-semibold text-base relative py-2 whitespace-nowrap"
+              className="nav-link text-gray-600 no-underline font-semibold text-base relative py-2 whitespace-nowrap transition-colors duration-300 hover:text-[#667eea]"
             >
               Contato
             </a>
           </div>
 
-          <div className="flex gap-[15px]">
+          <div className="flex gap-3.75">
             <a
               href="https://github.com/seuuser"
               target="_blank"
               title="GitHub"
-              className="text-gray-600 text-[1.2rem] transition-all w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm hover:scale-110"
+              className="text-gray-600 text-[1.2rem] transition-all w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm hover: duration-300 hover:bg-[#667eea] hover:shadow-(--shadow-glow) hover:-translate-y-0.75 hover:rotate-[8deg] hover:text-white"
             >
               <FaGithub />
             </a>
@@ -139,14 +139,15 @@ export default function Home() {
               href="https://linkedin.com/in/seuuser"
               target="_blank"
               title="LinkedIn"
-              className="text-gray-600 text-[1.2rem] transition-all w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm hover:scale-110"
+              className="text-gray-600 text-[1.2rem] transition-all w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm hover: duration-300 hover:bg-[#667eea] hover:shadow-(--shadow-glow) hover:-translate-y-0.75 hover:rotate-[8deg] hover:text-white"
             >
               <FaLinkedin />
             </a>
             <a
               href="mailto:seuemail@gmail.com"
               title="Email"
-              className="text-gray-600 text-[1.2rem] transition-all w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm hover:scale-110"
+              className="text-gray-600 text-[1.2rem] transition-all w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm hover: duration-300
+     hover:bg-[#667eea] hover:shadow-(--shadow-glow) hover:-translate-y-0.75 hover:rotate-[8deg] hover:text-white"
             >
               <MdEmail />
             </a>

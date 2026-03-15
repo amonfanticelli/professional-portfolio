@@ -3,7 +3,7 @@ import profileImage from "./assets/profile-image.jpg";
 import Image from "next/image";
 import { useReveal } from "./components/useReveal";
 import { MdEmail } from "react-icons/md";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaCode } from "react-icons/fa";
 
 export default function Home() {
   useReveal();
@@ -69,7 +69,7 @@ export default function Home() {
             style={{ transitionDelay: "600ms" }}
             className="justify-center flex-wrap flex flex-row gap-6 reveal"
           >
-            <div className="text-center bg-white/15 px-7.5 py-5 rounded-lg backdrop-blur-md border border-white/30 transition-all duration-400 cursor-default flex-1 min-w-30 flex flex-col hover:-translate-y-1.25 hover:scale-[1.05] hover:bg-white/25 hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)]">
+            <div className="origin-center will-change-transform text-center bg-white/15 px-7.5 py-5 rounded-lg backdrop-blur-md border border-white/30 transition-all duration-400 cursor-default flex-1 min-w-30 flex flex-col hover:-translate-y-1.25 hover:scale-[1.05] hover:bg-white/25 hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)]">
               <span className="block text-[2.8rem] font-bold text-white leading-none">
                 16+
               </span>
@@ -77,7 +77,7 @@ export default function Home() {
                 PROJETOS
               </span>
             </div>
-            <div className="text-center bg-white/15 px-7.5 py-5 rounded-lg backdrop-blur-md border border-white/30 transition-all duration-400 cursor-default flex-1 min-w-30 flex flex-col hover:-translate-y-1.25 hover:scale-[1.05] hover:bg-white/25 hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)]">
+            <div className="origin-center will-change-transform text-center bg-white/15 px-7.5 py-5 rounded-lg backdrop-blur-md border border-white/30 transition-all duration-400 cursor-default flex-1 min-w-30 flex flex-col hover:-translate-y-1.25 hover:scale-[1.05] hover:bg-white/25 hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)]">
               <span className="block text-[2.8rem] font-bold text-white leading-none">
                 9+
               </span>
@@ -85,7 +85,7 @@ export default function Home() {
                 TECNOLOGIAS
               </span>
             </div>
-            <div className="text-center bg-white/15 px-7.5 py-5 rounded-lg backdrop-blur-md border border-white/30 transition-all duration-400 cursor-default flex-1 min-w-30 flex flex-col hover:-translate-y-1.25 hover:scale-[1.05] hover:bg-white/25 hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)]">
+            <div className="origin-center will-change-transform min-w-30 flex-1 text-center bg-white/15 px-7.5 py-5 rounded-lg backdrop-blur-md border border-white/30 transition-all duration-400 cursor-default  flex flex-col hover:-translate-y-1.25 hover:scale-[1.05] hover:bg-white/25 hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)]">
               <span className="block text-[2.8rem] font-bold text-white leading-none">
                 3+
               </span>
@@ -128,25 +128,25 @@ export default function Home() {
 
           <div className="flex gap-3.75">
             <a
-              href="https://github.com/seuuser"
+              href="https://github.com/amonfanticelli"
               target="_blank"
               title="GitHub"
-              className="text-gray-600 text-[1.2rem] transition-all w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm hover: duration-300 hover:bg-[#667eea] hover:shadow-(--shadow-glow) hover:-translate-y-0.75 hover:rotate-[8deg] hover:text-white"
+              className="text-gray-600 text-[1.2rem] transition-all w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm duration-300 hover:bg-[#667eea] hover:shadow-(--shadow-glow) hover:-translate-y-0.75 hover:rotate-[8deg] hover:text-white"
             >
               <FaGithub />
             </a>
             <a
-              href="https://linkedin.com/in/seuuser"
+              href="https://www.linkedin.com/in/amon-fanticelli/"
               target="_blank"
               title="LinkedIn"
-              className="text-gray-600 text-[1.2rem] transition-all w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm hover: duration-300 hover:bg-[#667eea] hover:shadow-(--shadow-glow) hover:-translate-y-0.75 hover:rotate-[8deg] hover:text-white"
+              className="text-gray-600 text-[1.2rem] transition-all w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm  duration-300 hover:bg-[#667eea] hover:shadow-(--shadow-glow) hover:-translate-y-0.75 hover:rotate-[8deg] hover:text-white"
             >
               <FaLinkedin />
             </a>
             <a
-              href="mailto:seuemail@gmail.com"
+              href="mailto:amonfanticelli@gmail.com"
               title="Email"
-              className="text-gray-600 text-[1.2rem] transition-all w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm hover: duration-300
+              className="text-gray-600 text-[1.2rem] transition-all w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm duration-300
      hover:bg-[#667eea] hover:shadow-(--shadow-glow) hover:-translate-y-0.75 hover:rotate-[8deg] hover:text-white"
             >
               <MdEmail />
@@ -154,6 +154,38 @@ export default function Home() {
           </div>
         </div>
       </nav>
+
+      <section id="sobre" className="py-24 w-full relative">
+        <div className="mx-auto max-w-[1200] px-5 w-full">
+          <h2 className="text-center reveal mb-3.5 text-white font-bold text-4xl">
+            Sobre Mim
+          </h2>
+          <div className=" reveal">
+            <p className="text-[1.15rem] text-white mb-6 leading-[1.8] text-justify">
+              Desenvolvedora versátil com experiência em desenvolvimento de
+              jogos (Pygame), análise de dados (Python, R, SQL) e aplicações
+              full-stack. Gosto de explorar desde algoritmos visuais e gráficos
+              interativos até modelagem preditiva e dashboards analíticos.
+            </p>
+            <p className="text-[1.15rem] text-white mb-6 leading-[1.8] text-justify">
+              Desenvolvedora versátil com experiência em desenvolvimento de
+              jogos (Pygame), análise de dados (Python, R, SQL) e aplicações
+              full-stack. Gosto de explorar desde algoritmos visuais e gráficos
+              interativos até modelagem preditiva e dashboards analíticos.
+            </p>
+
+            <div className="flex flex-wrap gap-5 ">
+              <div className="skill-item flex items-center gap-3 px-6 py-4 bg-white rounded-2xl border border-[rgba(255,107,157,0.15)] transition-all duration-300  hover:-translate-y-1.25 hover:border-[#ff6b9d] ">
+                <div className="animate-[bounceSubtle_2s_infinite]">
+                  <FaCode />
+                </div>
+
+                <span>Full Stack Dev</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

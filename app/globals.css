@@ -13,9 +13,9 @@
   --gradient-bg: linear-gradient(135deg, #0a0a0f 0%, #0f0c29 100%);
   --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.5);
   --accent-warning: #f59e0b;
-  --accent-primary: #667eea; /* ou a cor que você usa */
   --shadow-glow: 0 0 20px rgba(102, 126, 234, 0.5);
   --transition: all 0.4s ease;
+  --shadow-sm: 0 4px 6px rgba(179, 157, 219, 0.1);
 }
 
 * {
@@ -27,6 +27,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --animate-bounce-subtle: bounceSubtle 2s infinite;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -113,5 +114,15 @@ header {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@keyframes bounceSubtle {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
   }
 }

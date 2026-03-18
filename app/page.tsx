@@ -3,7 +3,14 @@ import profileImage from "./assets/profile-image.jpg";
 import Image from "next/image";
 import { useReveal } from "./components/useReveal";
 import { MdEmail } from "react-icons/md";
-import { FaGithub, FaLinkedin, FaCode } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaCode,
+  FaCogs,
+  FaLayerGroup,
+  FaMobileAlt,
+} from "react-icons/fa";
 
 export default function Home() {
   useReveal();
@@ -11,15 +18,18 @@ export default function Home() {
     <>
       <header
         className="
+        max-lg:pt-5
         relative
         overflow-hidden
+        max-lg:h-auto         
+        max-lg:pb-18
         py-20
         [clip-path:polygon(0_0,100%_0,100%_90%,0_100%)]
-        h-[541px]
+        h-135.25
       "
       >
-        <div className="max-w-300 mx-auto px-5 w-full relative z-10 flex items-center justify-between flex-wrap gap-10">
-          <div className="flex flex-row gap-8">
+        <div className="max-lg:justify-center max-w-300 mx-auto px-5 w-full relative z-10 flex items-center justify-between flex-wrap gap-10">
+          <div className="flex items-center flex-col lg:flex-row gap-8">
             <div className="max-h-36 relative shrink-0 gap-8 profile-image-container">
               <Image
                 src={profileImage}
@@ -40,23 +50,23 @@ export default function Home() {
               />
             </div>
 
-            <div className="flex flex-col max-w-lg">
+            <div className="max-lg:items-center flex flex-col max-w-lg">
               <h1
                 style={{ transitionDelay: "0ms" }}
-                className=" text-5xl font-bold mb-3 break-normal text-white text-shadow-[0_4px_12px_rgba(0,0,0,0.1)] reveal"
+                className="max-lg:text-4xl max-lg:text-center text-5xl font-bold mb-3 break-normal text-white text-shadow-[0_4px_12px_rgba(0,0,0,0.1)] reveal"
               >
                 Amon Fanticelli
               </h1>
               <span
                 style={{ transitionDelay: "200ms" }}
-                className=" max-w-max text-[1.4rem] text-white/95 mb-3 font-semibold inline-block bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm reveal"
+                className="max-lg:text-center max-lg:rounded-2xl max-w-max text-[1.4rem] text-white/95 mb-3 font-semibold inline-block bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm reveal"
               >
                 {" "}
                 Dev Full-Stack • Data Science • Game Dev{" "}
               </span>
               <span
                 style={{ transitionDelay: "400ms" }}
-                className=" text-[1.1rem] text-white/90 max-w-[500px] leading-relaxed reveal"
+                className="max-lg:text-center text-[1.1rem] text-white/90 max-w-125 leading-relaxed reveal"
               >
                 De jogos interativos a pipelines de dados e aplicações web
                 completas — construo soluções criativas que combinam código
@@ -67,9 +77,9 @@ export default function Home() {
 
           <div
             style={{ transitionDelay: "600ms" }}
-            className="justify-center flex-wrap flex flex-row gap-6 reveal"
+            className="max-lg:gap-3.5 justify-center flex-wrap flex flex-row gap-6 reveal"
           >
-            <div className="origin-center will-change-transform text-center bg-white/15 px-7.5 py-5 rounded-lg backdrop-blur-md border border-white/30 transition-all duration-400 cursor-default flex-1 min-w-30 flex flex-col hover:-translate-y-1.25 hover:scale-[1.05] hover:bg-white/25 hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)]">
+            <div className="max-lg:px-2.5 max-lg:py-3.75 origin-center will-change-transform text-center bg-white/15 px-7.5 py-5 rounded-lg backdrop-blur-md border border-white/30 transition-all duration-400 cursor-default flex-1 min-w-30 flex flex-col hover:-translate-y-1.25 hover:scale-[1.05] hover:bg-white/25 hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)]">
               <span className="block text-[2.8rem] font-bold text-white leading-none">
                 16+
               </span>
@@ -77,7 +87,7 @@ export default function Home() {
                 PROJETOS
               </span>
             </div>
-            <div className="origin-center will-change-transform text-center bg-white/15 px-7.5 py-5 rounded-lg backdrop-blur-md border border-white/30 transition-all duration-400 cursor-default flex-1 min-w-30 flex flex-col hover:-translate-y-1.25 hover:scale-[1.05] hover:bg-white/25 hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)]">
+            <div className="max-lg:px-2.5 max-lg:py-3.75 origin-center will-change-transform text-center bg-white/15 px-7.5 py-5 rounded-lg backdrop-blur-md border border-white/30 transition-all duration-400 cursor-default flex-1 min-w-30 flex flex-col hover:-translate-y-1.25 hover:scale-[1.05] hover:bg-white/25 hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)]">
               <span className="block text-[2.8rem] font-bold text-white leading-none">
                 9+
               </span>
@@ -85,7 +95,7 @@ export default function Home() {
                 TECNOLOGIAS
               </span>
             </div>
-            <div className="origin-center will-change-transform min-w-30 flex-1 text-center bg-white/15 px-7.5 py-5 rounded-lg backdrop-blur-md border border-white/30 transition-all duration-400 cursor-default  flex flex-col hover:-translate-y-1.25 hover:scale-[1.05] hover:bg-white/25 hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)]">
+            <div className="max-lg:px-2.5 max-lg:py-3.75 origin-center will-change-transform min-w-30 flex-1 text-center bg-white/15 px-7.5 py-5 rounded-lg backdrop-blur-md border border-white/30 transition-all duration-400 cursor-default  flex flex-col hover:-translate-y-1.25 hover:scale-[1.05] hover:bg-white/25 hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)]">
               <span className="block text-[2.8rem] font-bold text-white leading-none">
                 3+
               </span>
@@ -98,8 +108,8 @@ export default function Home() {
       </header>
 
       <nav className="bg-white/85 backdrop-blur-[20px] border-b border-pink-300/10 relative z-100 transition-all w-full">
-        <div className="flex items-center justify-between py-3.75 px-5 max-w-300 mx-auto">
-          <div className="flex gap-10 flex-wrap justify-center">
+        <div className="max-lg:gap-3.5 max-lg:flex-col flex items-center justify-between py-3.75 px-5 max-w-300 mx-auto">
+          <div className="max-lg:gap-3.5 flex gap-10 flex-wrap justify-center">
             <a
               href="#sobre"
               className="nav-link text-gray-600 no-underline font-semibold text-base relative py-2 whitespace-nowrap transition-colors duration-300 hover:text-[#667eea]"
@@ -182,7 +192,56 @@ export default function Home() {
 
                 <span>Full Stack Dev</span>
               </div>
+              <div className="skill-item flex items-center gap-3 px-6 py-4 bg-white rounded-2xl border border-[rgba(255,107,157,0.15)] transition-all duration-300  hover:-translate-y-1.25 hover:border-[#ff6b9d] ">
+                <div className="animate-[bounceSubtle_2s_infinite]">
+                  <FaCogs />
+                </div>
+
+                <span>Engenheiro de software</span>
+              </div>
+              <div className="skill-item flex items-center gap-3 px-6 py-4 bg-white rounded-2xl border border-[rgba(255,107,157,0.15)] transition-all duration-300  hover:-translate-y-1.25 hover:border-[#ff6b9d] ">
+                <div className="animate-[bounceSubtle_2s_infinite]">
+                  <FaLayerGroup />
+                </div>
+
+                <span>Analise e desenvolvimento de sistemas</span>
+              </div>
+              <div className="skill-item flex items-center gap-3 px-6 py-4 bg-white rounded-2xl border border-[rgba(255,107,157,0.15)] transition-all duration-300  hover:-translate-y-1.25 hover:border-[#ff6b9d] ">
+                <div className="animate-[bounceSubtle_2s_infinite]">
+                  <FaMobileAlt />
+                </div>
+
+                <span>Mobile Apps</span>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ferramentas" className="py-24 w-full relative">
+        <div className="mx-auto max-w-[1200] px-5 w-full">
+          <h3 className="reveal text-[2.8rem] text-white font-bold text-center bg-clip-text  mx-auto mb-3.75 max-w-full px-2.5">
+            Tech Stack
+          </h3>
+          <p className="reveal text-center text-white text-[1.2rem] mb-17.5 max-w-150 mx-auto px-2.5">
+            Ferramentas que utilizo
+          </p>
+        </div>
+
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(140px,1fr))] gap-[30px]">
+          <div className="ferramenta reveal bg-white rounded-[var(--border-radius)] px-[20px] py-[40px] text-center shadow-[var(--shadow-sm)] transition-all border border-transparent">
+            <FaMobileAlt className="block text-[3rem] mb-[20px] bg-[var(--gradient-primary)] bg-clip-text transition-transform duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)]" />
+
+            <span className="block font-bold text-[1.1rem] text-[var(--text-primary)]">
+              Javascript
+            </span>
+          </div>
+          <div className="ferramenta reveal bg-white rounded-[var(--border-radius)] px-[20px] py-[40px] text-center shadow-[var(--shadow-sm)] transition-all border border-transparent">
+            <FaMobileAlt className="block text-[3rem] mb-[20px] bg-[var(--gradient-primary)] bg-clip-text text-transparent transition-transform duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)]" />
+
+            <span className="block font-bold text-[1.1rem] text-[var(--text-primary)]">
+              Javascript
+            </span>
           </div>
         </div>
       </section>

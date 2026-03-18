@@ -89,6 +89,26 @@ header {
   width: 100%;
 }
 
+.ferramenta {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.ferramenta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-bg);
+  opacity: 0;
+  z-index: -1;
+  transition: var(--transition);
+}
+
+.ferramenta:hover::before {
+  opacity: 1;
+}
+
 @keyframes floatProfile {
   0%,
   100% {

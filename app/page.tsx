@@ -10,7 +10,22 @@ import {
   FaCogs,
   FaLayerGroup,
   FaMobileAlt,
+  FaReact,
+  FaNodeJs,
+  FaDocker,
+  FaPython,
+  FaGitAlt,
+  FaAws,
 } from "react-icons/fa";
+
+import {
+  SiNextdotjs,
+  SiTypescript,
+  SiPostgresql,
+  SiTailwindcss,
+  SiExpress,
+  SiVtex,
+} from "react-icons/si";
 
 export default function Home() {
   useReveal();
@@ -219,29 +234,39 @@ export default function Home() {
       </section>
 
       <section id="ferramentas" className="py-24 w-full relative">
-        <div className="mx-auto max-w-[1200] px-5 w-full">
-          <h3 className="reveal text-[2.8rem] text-white font-bold text-center bg-clip-text  mx-auto mb-3.75 max-w-full px-2.5">
+        <div className="mx-auto max-w-[1200px] px-5 w-full">
+          <h3 className="reveal text-[2.8rem] text-white font-bold text-center mx-auto mb-3.75 max-w-full px-2.5">
             Tech Stack
           </h3>
           <p className="reveal text-center text-white text-[1.2rem] mb-17.5 max-w-150 mx-auto px-2.5">
             Ferramentas que utilizo
           </p>
-        </div>
 
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(140px,1fr))] gap-[30px]">
-          <div className="ferramenta reveal bg-white rounded-[var(--border-radius)] px-[20px] py-[40px] text-center shadow-[var(--shadow-sm)] transition-all border border-transparent">
-            <FaMobileAlt className="block text-[3rem] mb-[20px] bg-[var(--gradient-primary)] bg-clip-text transition-transform duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)]" />
-
-            <span className="block font-bold text-[1.1rem] text-[var(--text-primary)]">
-              Javascript
-            </span>
-          </div>
-          <div className="ferramenta reveal bg-white rounded-[var(--border-radius)] px-[20px] py-[40px] text-center shadow-[var(--shadow-sm)] transition-all border border-transparent">
-            <FaMobileAlt className="block text-[3rem] mb-[20px] bg-[var(--gradient-primary)] bg-clip-text text-transparent transition-transform duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)]" />
-
-            <span className="block font-bold text-[1.1rem] text-[var(--text-primary)]">
-              Javascript
-            </span>
+          <div className="flex flex-row gap-7 flex-wrap justify-center">
+            {[
+              { icon: <SiTypescript />, label: "TypeScript", color: "#3178C6" },
+              { icon: <FaReact />, label: "React", color: "#61DAFB" },
+              { icon: <SiNextdotjs />, label: "Next.js", color: "#000000" },
+              { icon: <FaNodeJs />, label: "Node.js", color: "#339933" },
+              { icon: <SiExpress />, label: "Express", color: "#000000" },
+              { icon: <SiPostgresql />, label: "PostgreSQL", color: "#4169E1" },
+              { icon: <SiTailwindcss />, label: "Tailwind", color: "#06B6D4" },
+              { icon: <FaPython />, label: "Python", color: "#3776AB" },
+              { icon: <FaDocker />, label: "Docker", color: "#2496ED" },
+              { icon: <FaAws />, label: "AWS", color: "#FF9900" },
+              { icon: <FaGitAlt />, label: "Git", color: "#F05032" },
+              { icon: <SiVtex />, label: "VTEX", color: "#F71963" },
+            ].map(({ icon, label, color }) => (
+              <div
+                key={label}
+                className="ferramenta w-36 h-44 flex flex-col items-center justify-center reveal bg-white rounded-2xl px-5 py-10 text-center border border-transparent"
+              >
+                {icon}
+                <span className="block font-bold text-[1.1rem] text-black mt-1">
+                  {label}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </section>

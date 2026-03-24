@@ -16,6 +16,7 @@ import {
   FaPython,
   FaGitAlt,
   FaAws,
+  FaExternalLinkAlt,
 } from "react-icons/fa";
 
 import {
@@ -267,6 +268,181 @@ export default function Home() {
                 </span>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos" className="py-24 w-full relative">
+        <div className="mx-auto max-w-[1200px] px-5 w-full">
+          <h3 className="reveal text-[2.8rem] text-white font-bold text-center mx-auto mb-3.75 max-w-full px-2.5">
+            Projetos em Destaque
+          </h3>
+          <p className="reveal text-center text-white/80 text-[1.2rem] mb-17.5 max-w-150 mx-auto px-2.5">
+            Explore meus trabalhos mais recentes
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: "PyOpenCV FaceRec",
+                description:
+                  "Sistema completo de reconhecimento facial com OpenCV (LBPH). Inclui Interface Gráfica moderna (CustomTkinter), cadastro automático e reconhecimento em tempo real.",
+                tags: ["Python", "OpenCV", "CustomTkinter"],
+                category: "COMPUTER VISION",
+                categoryColor: "#667eea",
+                github: "https://github.com/amonfanticelli",
+                demo: null as string | null,
+                image: null as string | null,
+              },
+              {
+                title: "Dino Run Vecna Edition",
+                description:
+                  "Versão temática do Dino Run onde você enfrenta o Vecna. Um jogo endless runner divertido desenvolvido para web.",
+                tags: ["JavaScript", "HTML5 Canvas", "CSS3"],
+                category: "GAME DEV",
+                categoryColor: "#667eea",
+                github: "https://github.com/amonfanticelli",
+                demo: "https://github.com/amonfanticelli" as string | null,
+                image: null as string | null,
+              },
+              {
+                title: "Pygame Asteroids",
+                description:
+                  "Uma interpretação moderna do clássico jogo de arcade Asteroids da Atari, apresentando sistema visual de profundidade 3D com interpolação de cores e rolagem parallax.",
+                tags: ["Python", "Pygame"],
+                category: "GAME DEV",
+                categoryColor: "#667eea",
+                github: "https://github.com/amonfanticelli",
+                demo: "https://github.com/amonfanticelli" as string | null,
+                image: null as string | null,
+              },
+              {
+                title: "E-commerce VTEX",
+                description:
+                  "Desenvolvimento e manutenção de loja virtual em VTEX IO com componentes customizados, otimização de performance e integração com APIs de pagamento.",
+                tags: ["VTEX IO", "React", "TypeScript"],
+                category: "FULL STACK",
+                categoryColor: "#667eea",
+                github: "https://github.com/amonfanticelli",
+                demo: null as string | null,
+                image: null as string | null,
+              },
+              {
+                title: "API RESTful Node",
+                description:
+                  "API robusta com Node.js e Express seguindo Repository Pattern com TypeORM. Autenticação JWT, estrutura MVC e banco PostgreSQL.",
+                tags: ["Node.js", "Express", "PostgreSQL"],
+                category: "BACK END",
+                categoryColor: "#667eea",
+                github: "https://github.com/amonfanticelli",
+                demo: null as string | null,
+                image: null as string | null,
+              },
+              {
+                title: "Dashboard Analytics",
+                description:
+                  "Dashboard analítico com Next.js para visualização de dados em tempo real, gráficos interativos e filtros dinâmicos com Context API.",
+                tags: ["Next.js", "TypeScript", "Tailwind"],
+                category: "FULL STACK",
+                categoryColor: "#667eea",
+                github: "https://github.com/amonfanticelli",
+                demo: "https://github.com/amonfanticelli" as string | null,
+                image: null as string | null,
+              },
+            ].map(
+              ({
+                title,
+                description,
+                tags,
+                category,
+                categoryColor,
+                github,
+                demo,
+                image,
+              }) => (
+                <div
+                  key={title}
+                  className="projeto-card reveal bg-white rounded-2xl overflow-hidden border border-transparent flex flex-col"
+                  style={
+                    { "--card-accent": categoryColor } as React.CSSProperties
+                  }
+                >
+                  <div className="relative w-full h-52 overflow-hidden flex items-center justify-center">
+                    {image ? (
+                      <img
+                        src={image}
+                        alt={title}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-linear-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] flex items-center justify-center opacity-80">
+                        <span className="text-white/20 text-6xl font-black tracking-tighter select-none">
+                          {title.charAt(0)}
+                        </span>
+                      </div>
+                    )}
+                    <span
+                      className="absolute top-4 right-4 text-white text-[0.7rem] font-bold px-3 py-1.5 rounded-full tracking-widest uppercase"
+                      style={{ background: categoryColor }}
+                    >
+                      {category}
+                    </span>
+                  </div>
+
+                  <div className="flex flex-col flex-1 p-6">
+                    <h4 className="text-[1.25rem] font-bold text-gray-900 mb-2">
+                      {title}
+                    </h4>
+                    <p className="text-gray-500 text-[0.95rem] leading-relaxed mb-4 flex-1">
+                      {description}
+                    </p>
+
+                    <div className="flex flex-wrap gap-2 mb-5">
+                      {tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="text-[0.8rem] px-3 py-1 rounded-full border font-medium"
+                          style={{
+                            color: categoryColor,
+                            borderColor: `${categoryColor}40`,
+                            background: `${categoryColor}10`,
+                          }}
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+
+                    <div className="flex gap-3">
+                      <a
+                        href={github}
+                        target="_blank"
+                        className="projeto-btn flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border-2 text-[0.9rem] font-semibold transition-all duration-300"
+                        style={{
+                          borderColor: categoryColor,
+                          color: categoryColor,
+                        }}
+                      >
+                        <FaGithub /> Code
+                      </a>
+                      {demo && (
+                        <a
+                          href={demo}
+                          target="_blank"
+                          className="projeto-btn flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border-2 text-[0.9rem] font-semibold transition-all duration-300"
+                          style={{
+                            borderColor: categoryColor,
+                            color: categoryColor,
+                          }}
+                        >
+                          <FaExternalLinkAlt /> Demo
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ),
+            )}
           </div>
         </div>
       </section>

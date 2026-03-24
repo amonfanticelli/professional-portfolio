@@ -137,6 +137,22 @@ header {
   color: #667eea;
 }
 
+.projeto-card {
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.projeto-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-color: rgba(255, 107, 157, 0.4);
+}
+
+.projeto-btn:hover {
+  color: white !important;
+  background: #667eea;
+}
+
 @keyframes floatProfile {
   0%,
   100% {

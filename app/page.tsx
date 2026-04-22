@@ -1,5 +1,6 @@
 "use client";
 import profileImage from "./assets/profile-image.jpg";
+// import profileImage from "./assets/black-bank-back-end.jpeg";
 import Image from "next/image";
 import { useReveal } from "./components/useReveal";
 import { MdEmail } from "react-icons/md";
@@ -284,48 +285,48 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "PyOpenCV FaceRec",
+                title: "KenzieHamburgueria",
                 description:
-                  "Sistema completo de reconhecimento facial com OpenCV (LBPH). Inclui Interface Gráfica moderna (CustomTkinter), cadastro automático e reconhecimento em tempo real.",
-                tags: ["Python", "OpenCV", "CustomTkinter"],
-                category: "COMPUTER VISION",
+                  "Front-end e-commerce application for a burger restaurant featuring product listing by category, shopping cart management, and product search.",
+                tags: ["React", "JavaScript"],
+                category: "FRONT END",
                 categoryColor: "#667eea",
-                github: "https://github.com/amonfanticelli",
+                github: "https://github.com/amonfanticelli/KenzieHamburgueria",
                 demo: null as string | null,
-                image: null as string | null,
+                image: "/kenzieburguer.jpg" as string | null,
               },
               {
-                title: "Dino Run Vecna Edition",
+                title: "KenzieHub",
                 description:
-                  "Versão temática do Dino Run onde você enfrenta o Vecna. Um jogo endless runner divertido desenvolvido para web.",
-                tags: ["JavaScript", "HTML5 Canvas", "CSS3"],
-                category: "GAME DEV",
+                  "Front-end application for developers to manage their personal tech stack and track learning progress, with user authentication and protected routes.",
+                tags: ["React", "TypeScript", "React Hook Form", "Yup"],
+                category: "FRONT END",
                 categoryColor: "#667eea",
-                github: "https://github.com/amonfanticelli",
-                demo: "https://github.com/amonfanticelli" as string | null,
-                image: null as string | null,
-              },
-              {
-                title: "Pygame Asteroids",
-                description:
-                  "Uma interpretação moderna do clássico jogo de arcade Asteroids da Atari, apresentando sistema visual de profundidade 3D com interpolação de cores e rolagem parallax.",
-                tags: ["Python", "Pygame"],
-                category: "GAME DEV",
-                categoryColor: "#667eea",
-                github: "https://github.com/amonfanticelli",
-                demo: "https://github.com/amonfanticelli" as string | null,
-                image: null as string | null,
-              },
-              {
-                title: "E-commerce VTEX",
-                description:
-                  "Desenvolvimento e manutenção de loja virtual em VTEX IO com componentes customizados, otimização de performance e integração com APIs de pagamento.",
-                tags: ["VTEX IO", "React", "TypeScript"],
-                category: "FULL STACK",
-                categoryColor: "#667eea",
-                github: "https://github.com/amonfanticelli",
+                github: "https://github.com/amonfanticelli/KenzieHub",
                 demo: null as string | null,
-                image: null as string | null,
+                image: "/kenziehub.jpg" as string | null,
+              },
+              {
+                title: "BlackBank API",
+                description:
+                  "Backend API that enables credit and debit transactions between users, with JWT authentication, PostgreSQL database, and Docker support.",
+                tags: ["Node.js", "TypeScript", "PostgreSQL", "Docker"],
+                category: "BACK END",
+                categoryColor: "#667eea",
+                github: "https://github.com/amonfanticelli/blackBank-backend",
+                demo: null as string | null,
+                image: "/black-bank-back-end.jpeg" as string | null,
+              },
+              {
+                title: "BlackBank",
+                description:
+                  "Front-end client for the BlackBank API, enabling credit and debit transactions between users with authentication and transaction history.",
+                tags: ["React", "TypeScript", "Styled Components", "Axios"],
+                category: "FRONT END",
+                categoryColor: "#667eea",
+                github: "https://github.com/amonfanticelli/blackBank-frontend",
+                demo: null as string | null,
+                image: "/black-bank-front-end.jpeg" as string | null,
               },
               {
                 title: "API RESTful Node",
@@ -369,11 +370,7 @@ export default function Home() {
                 >
                   <div className="relative w-full h-52 overflow-hidden flex items-center justify-center">
                     {image ? (
-                      <img
-                        src={image}
-                        alt={title}
-                        className="w-full h-full object-cover"
-                      />
+                      <img src={image} alt={title} className="w-full h-full" />
                     ) : (
                       <div className="w-full h-full bg-linear-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] flex items-center justify-center opacity-80">
                         <span className="text-white/20 text-6xl font-black tracking-tighter select-none">

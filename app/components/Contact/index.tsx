@@ -1,37 +1,54 @@
+"use client";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { useLang } from "../../components/Language/index";
 
 export const Contact = () => {
+  const { lang } = useLang();
+
+  const t = {
+    pt: {
+      title: "Vamos Conversar?",
+      subtitle: "Estou sempre aberto a novas ideias e oportunidades",
+    },
+    en: {
+      title: "Let's Talk?",
+      subtitle: "I'm always open to new ideas and opportunities",
+    },
+  }[lang];
+
+  const links = [
+    {
+      icon: <FaEnvelope className="text-3xl" />,
+      label: "E-mail",
+      value: "amonfanticelli@gmail.com",
+      href: "mailto:amonfanticelli@gmail.com",
+    },
+    {
+      icon: <FaLinkedin className="text-3xl" />,
+      label: "LinkedIn",
+      value: "/amon-fanticelli",
+      href: "https://www.linkedin.com/in/amon-fanticelli/",
+    },
+    {
+      icon: <FaGithub className="text-3xl" />,
+      label: "GitHub",
+      value: "/amonfanticelli",
+      href: "https://github.com/amonfanticelli",
+    },
+  ];
+
   return (
     <section id="contato" className="py-24 w-full relative">
       <div className="mx-auto max-w-[1200px] px-5 w-full">
         <h3 className="reveal text-[2.8rem] text-white font-bold text-center mx-auto mb-3 max-w-full px-2.5">
-          Vamos Conversar?
+          {t.title}
         </h3>
         <p className="reveal text-center text-white/80 text-[1.2rem] mb-16 max-w-150 mx-auto px-2.5">
-          Estou sempre aberto a novas ideias e oportunidades
+          {t.subtitle}
         </p>
 
         <div className="reveal flex flex-col sm:flex-row justify-center gap-6 max-w-3xl mx-auto">
-          {[
-            {
-              icon: <FaEnvelope className="text-3xl" />,
-              label: "E-mail",
-              value: "amonfanticelli@gmail.com",
-              href: "mailto:amonfanticelli@gmail.com",
-            },
-            {
-              icon: <FaLinkedin className="text-3xl" />,
-              label: "LinkedIn",
-              value: "/amon-fanticelli",
-              href: "https://www.linkedin.com/in/amon-fanticelli/",
-            },
-            {
-              icon: <FaGithub className="text-3xl" />,
-              label: "GitHub",
-              value: "/amonfanticelli",
-              href: "https://github.com/amonfanticelli",
-            },
-          ].map(({ icon, label, value, href }) => (
+          {links.map(({ icon, label, value, href }) => (
             <a
               key={label}
               href={href}

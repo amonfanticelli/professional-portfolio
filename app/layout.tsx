@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Quicksand } from "next/font/google";
+// @ts-ignore
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,6 +22,9 @@ const quicksand = Quicksand({
 export const metadata: Metadata = {
   title: "Amon Fanticelli",
   description: "Portfolio",
+  icons: {
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
@@ -33,6 +38,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${quicksand.className} antialiased`}
       >
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );

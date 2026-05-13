@@ -9,14 +9,14 @@ export const Header = () => {
   const t = {
     pt: {
       role: "Engenheiro de Software • Full Stack • E-commerce",
-      bio: "Mais de 3 anos desenvolvendo aplicações web completas do front-end com React e Next.js ao back-end com Node.js e PostgreSQL, incluindo projetos em VTEX IO e VTEX FastStore.",
+      bio: "Mais de 3 anos desenvolvendo aplicações web completas do front-end com React e Next.js ao back-end com Node.js e Python, incluindo projetos em VTEX IO e VTEX FastStore.",
       projects: "PROJETOS",
       technologies: "TECNOLOGIAS",
       experience: "ANOS EXP.",
     },
     en: {
       role: "Software Engineer • Full Stack • E-commerce",
-      bio: "Over 3 years building complete web applications from front-end with React and Next.js to back-end with Node.js and PostgreSQL, including e-commerce projects with VTEX IO and FastStore.",
+      bio: "Over 3 years building complete web applications from front-end with React and Next.js to back-end with Node.js and Python, including e-commerce projects with VTEX IO and VTEX FastStore.",
       projects: "PROJECTS",
       technologies: "TECHNOLOGIES",
       experience: "YEARS EXP.",
@@ -57,7 +57,7 @@ export const Header = () => {
             </h1>
             <span
               style={{ transitionDelay: "200ms" }}
-              className="max-lg:text-center max-lg:rounded-2xl max-w-max text-[1.4rem] text-white/95 mb-3 font-semibold inline-block bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm reveal"
+              className="lg:w-max max-lg:w-full wrap-break-word max-lg:text-center flex justify-center items-center max-lg:rounded-2xl text-[1.4rem] text-white/95 mb-3 font-semibold bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm reveal"
             >
               {t.role}
             </span>

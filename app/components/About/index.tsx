@@ -9,7 +9,7 @@ export const About = () => {
     pt: {
       title: "Sobre Mim",
       bio1: "Engenheiro de software com mais de 3 anos de experiência no desenvolvimento de aplicações web, atuando tanto no front-end quanto no back-end. Tenho domínio em JavaScript e TypeScript, com foco em React e Next.js para interfaces responsivas e de alta performance.",
-      bio2: "Tenho experiência com APIs RESTful em Node.js com Express, bancos de dados relacionais (PostgreSQL, MySQL), Docker e AWS. Trabalhei em projetos de e-commerce com VTEX IO e FastStore, em equipes ágeis com Scrum e Kanban, utilizando GitFlow e ferramentas como Jira e Trello.",
+      bio2: "Tenho experiência com APIs RESTful em Node.js com Express, bancos de dados relacionais (PostgreSQL, MySQL), Docker e AWS. Também desenvolvo aplicações back-end com Python e Django. Trabalhei em projetos de e-commerce com VTEX IO e FastStore, em equipes ágeis com Scrum e Kanban, utilizando GitFlow e ferramentas como Jira e Trello.",
       skills: [
         "Full Stack Dev",
         "Engenheiro de Software",
@@ -20,7 +20,7 @@ export const About = () => {
     en: {
       title: "About Me",
       bio1: "Software engineer with over 3 years of experience building web applications across front-end and back-end. Proficient in JavaScript and TypeScript, with a focus on React and Next.js for responsive, high-performance interfaces.",
-      bio2: "Experienced with RESTful APIs using Node.js and Express, relational databases (PostgreSQL, MySQL), Docker, and AWS. Worked on e-commerce projects with VTEX IO and FastStore, in agile teams using Scrum, Kanban, GitFlow, Jira, and Trello.",
+      bio2: "Experienced with RESTful APIs using Node.js and Express, relational databases (PostgreSQL, MySQL), Docker, and AWS. Also develop back-end applications with Python and Django. Worked on e-commerce projects with VTEX IO and FastStore, in agile teams using Scrum, Kanban, GitFlow, Jira, and Trello.",
       skills: [
         "Full Stack Dev",
         "Software Engineer",

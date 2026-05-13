@@ -8,15 +8,15 @@ export const Header = () => {
 
   const t = {
     pt: {
-      role: "Dev Full-Stack • Data Science • Game Dev",
-      bio: "De jogos interativos a pipelines de dados e aplicações web completas — construo soluções criativas que combinam código limpo, design inteligente e análise robusta.",
+      role: "Engenheiro de Software • Full Stack • E-commerce",
+      bio: "Mais de 3 anos desenvolvendo aplicações web completas do front-end com React e Next.js ao back-end com Node.js e PostgreSQL, incluindo projetos em VTEX IO e VTEX FastStore.",
       projects: "PROJETOS",
       technologies: "TECNOLOGIAS",
       experience: "ANOS EXP.",
     },
     en: {
-      role: "Full-Stack Dev • Data Science • Game Dev",
-      bio: "From interactive games to data pipelines and complete web applications — I build creative solutions combining clean code, smart design, and robust analysis.",
+      role: "Software Engineer • Full Stack • E-commerce",
+      bio: "Over 3 years building complete web applications from front-end with React and Next.js to back-end with Node.js and PostgreSQL, including e-commerce projects with VTEX IO and FastStore.",
       projects: "PROJECTS",
       technologies: "TECHNOLOGIES",
       experience: "YEARS EXP.",
@@ -76,7 +76,7 @@ export const Header = () => {
         >
           <div className="max-lg:px-2.5 max-lg:py-3.75 origin-center will-change-transform text-center bg-white/15 px-7.5 py-5 rounded-lg backdrop-blur-md border border-white/30 transition-all duration-400 cursor-default flex-1 min-w-30 flex flex-col hover:-translate-y-1.25 hover:scale-[1.05] hover:bg-white/25 hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)]">
             <span className="block text-[2.8rem] font-bold text-white leading-none">
-              16+
+              15+
             </span>
             <span className="text-[0.85rem] text-white/90 uppercase tracking-[1.5px] mt-2 font-semibold">
               {t.projects}
@@ -84,7 +84,7 @@ export const Header = () => {
           </div>
           <div className="max-lg:px-2.5 max-lg:py-3.75 origin-center will-change-transform text-center bg-white/15 px-7.5 py-5 rounded-lg backdrop-blur-md border border-white/30 transition-all duration-400 cursor-default flex-1 min-w-43 flex flex-col hover:-translate-y-1.25 hover:scale-[1.05] hover:bg-white/25 hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)]">
             <span className="block text-[2.8rem] font-bold text-white leading-none">
-              9+
+              12+
             </span>
             <span className="text-[0.85rem] text-white/90 uppercase tracking-[1.5px] mt-2 font-semibold">
               {t.technologies}

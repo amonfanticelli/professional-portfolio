@@ -8,24 +8,24 @@ export const About = () => {
   const t = {
     pt: {
       title: "Sobre Mim",
-      bio1: "Desenvolvedora versátil com experiência em desenvolvimento de jogos (Pygame), análise de dados (Python, R, SQL) e aplicações full-stack. Gosto de explorar desde algoritmos visuais e gráficos interativos até modelagem preditiva e dashboards analíticos.",
-      bio2: "Desenvolvedora versátil com experiência em desenvolvimento de jogos (Pygame), análise de dados (Python, R, SQL) e aplicações full-stack. Gosto de explorar desde algoritmos visuais e gráficos interativos até modelagem preditiva e dashboards analíticos.",
+      bio1: "Engenheiro de software com mais de 3 anos de experiência no desenvolvimento de aplicações web, atuando tanto no front-end quanto no back-end. Tenho domínio em JavaScript e TypeScript, com foco em React e Next.js para interfaces responsivas e de alta performance.",
+      bio2: "Tenho experiência com APIs RESTful em Node.js com Express, bancos de dados relacionais (PostgreSQL, MySQL), Docker e AWS. Trabalhei em projetos de e-commerce com VTEX IO e FastStore, em equipes ágeis com Scrum e Kanban, utilizando GitFlow e ferramentas como Jira e Trello.",
       skills: [
         "Full Stack Dev",
-        "Engenheiro de software",
-        "Análise e desenvolvimento de sistemas",
-        "Mobile Apps",
+        "Engenheiro de Software",
+        "Análise e Desenvolvimento de Sistemas",
+        "E-commerce",
       ],
     },
     en: {
       title: "About Me",
-      bio1: "Versatile developer with experience in game development (Pygame), data analysis (Python, R, SQL), and full-stack applications. I enjoy exploring everything from visual algorithms and interactive charts to predictive modeling and analytical dashboards.",
-      bio2: "Versatile developer with experience in game development (Pygame), data analysis (Python, R, SQL), and full-stack applications. I enjoy exploring everything from visual algorithms and interactive charts to predictive modeling and analytical dashboards.",
+      bio1: "Software engineer with over 3 years of experience building web applications across front-end and back-end. Proficient in JavaScript and TypeScript, with a focus on React and Next.js for responsive, high-performance interfaces.",
+      bio2: "Experienced with RESTful APIs using Node.js and Express, relational databases (PostgreSQL, MySQL), Docker, and AWS. Worked on e-commerce projects with VTEX IO and FastStore, in agile teams using Scrum, Kanban, GitFlow, Jira, and Trello.",
       skills: [
         "Full Stack Dev",
         "Software Engineer",
         "Systems Analysis & Development",
-        "Mobile Apps",
+        "E-commerce",
       ],
     },
   }[lang];

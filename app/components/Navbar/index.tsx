@@ -56,7 +56,7 @@ export const Navbar = () => {
         <div className="flex gap-3.75 items-center">
           <button
             onClick={toggle}
-            className="text-gray-600 text-[0.8rem] font-bold transition-all h-10 px-3 flex items-center justify-center rounded-full bg-white shadow-sm duration-300 hover:bg-[#667eea] hover:text-white hover:shadow-(--shadow-glow) hover:-translate-y-0.75 tracking-wide"
+            className="text-gray-600 text-[0.8rem] font-bold transition-all h-10 px-3 flex items-center justify-center rounded-full bg-white shadow-sm duration-300 hover:bg-[#667eea] hover:text-white hover:shadow-(--shadow-glow) hover:-translate-y-0.75 tracking-wide cursor-pointer"
           >
             {lang === "pt" ? "EN" : "PT"}
           </button>
